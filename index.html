@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Accenture Security TA Survey | Check Yourself for fun!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Accenture Security Survey <small>There are no bad answers! Just learning :)</small></h1>
+</div>
+
+<!-- Survey - START -->
+<div class="container">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">Will packet filtering prevent ARP Poisoning attack?</div>
+            <div class="panel-body">
+                <br />
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="addScore()"/> True
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> False
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">What HTTP response code is returned while server error?</div>
+            <div class="panel-body">
+                <br />
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> 200
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> 400
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="addScore()"/> 500
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">JWT means?</div>
+            <div class="panel-body">
+                <br />
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="addScore()"/> JSON Web Token
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> JavaScript Web Token
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> Java Web Token
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> JavaScript web Trust
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Does Oauth 2 specification bases on Access Tokens?</div>
+            <div class="panel-body">
+                <br />
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="addScore()"/> True
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> False
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Does BCrypt using salt during hashing process?</div>
+            <div class="panel-body">
+                <br />
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="addScore()"/> True
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> False
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Is it possible to post body in GET request?</div>
+            <div class="panel-body">
+                <br />
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> True
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="addScore()"/> False
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Will DNSSec protect agains <b>DNS poisoning</b> attacks?</div>
+            <div class="panel-body">
+                <br />
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="addScore()"/> True
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> False
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading"> 
+                &lt;html&gt;
+                &lt;![CDATA[&lt;]]&gt;script&lt;![CDATA[&gt;]]&gt;alert('xss')&lt;![CDATA[&lt;]]&gt;/script&lt;![CDATA[&gt;]]&gt;
+                &lt;/html&gt;
+                <br/>
+              is this valid example of XML injection?</div>
+            <div class="panel-body">
+                <br />
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="addScore()"/> True
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> False
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">GET http://some_site.com.br/get-files?file=/etc/passwd what is the name of this attack?</div>
+            <div class="panel-body">
+                <br />
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> SQL Injection
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> XSS
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> CSRF
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="addScore()"/> Path Traversal
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                &lt;?php 
+                $query =   "SELECT id, name FROM products ORDER BY name LIMIT 20 OFFSET $argv[0];";
+                ?&gt;  
+                <br/>
+                what attack is possible with this code
+            </div>
+            <div class="panel-body">
+                <br />
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="addScore()"/> SQL Injection
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> Path Travelsal
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> XSS
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" onchange="subScore()"/> CSRF
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Check answers
+            </div>
+            <div class="panel-body">
+                <br />
+                <div class="btn-group ">
+                        <input id="button"  class ="btn-primary" type="button" value="Check" />
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" id="winner">
+            <div class="panel-heading">
+                Check answers
+            </div>
+            <div class="panel-body">
+                <br />
+                Congratulations! You have <span id="result">&nbsp;</span>/10 score! 
+                Good job!
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- you need to include the shieldui css and js assets in order for the components to work -->
+<link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+<script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+
+<script type="text/javascript">window.score = 0;</script>
+
+<script>
+    $(document).ready(
+    function(){
+        $('#winner').hide();
+        $("#button").click(function (e) {
+            console.log(window.score);
+            e.preventDefault();
+            document.querySelector('#result').innerHTML = window.score;
+            $("#winner").show("slow");
+            $([document.documentElement, document.body]).animate({scrollTop: $("#winner").offset().top}, 2000);
+        });
+
+    });
+
+    function addScore() {
+        window.score = window.score + 1;
+        console.log(window.score);
+    }
+
+    function subScore() {
+        window.score = window.score - 1;
+        console.log(window.score);
+    }
+</script>
+
+<!-- Survey - END -->
+
+</div>
+
+</body>
+</html>
